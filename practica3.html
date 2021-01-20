@@ -1,0 +1,234 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <title>Practica3</title> 
+    <link href="css/bootstrap.min.css" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head> 
+<body> 
+  <div class="container">
+<h2>CONTROL SELECT</h2>
+    <form role="form">
+       <label for="control1">
+        Escoja un elemento</label> 
+         <select class="form-control" id="control1"> 
+            <option>1</option> 
+            <option>2</option>
+            <option>3</option> 
+            <option>4</option> 
+            <option>5</option> 
+          </select><br>
+       <label for="control2">
+       Escoja varios elementos</label> <br>
+         <select multiple class="form-control" id="control2"> 
+            <option>1</option> 
+            <option>2</option>
+            <option>3</option> 
+            <option>4</option> 
+            <option>5</option>       
+         </select>      
+        <button type="submit" class="btn btn-default">Enviar</button> 
+    </form>
+  </div>
+
+<h2>FORMULARIO EN UNA LINEA </h2>
+
+<div class="container">
+
+  <form class="form-inline" role="form">
+    <div class="form-group">
+      <label for="mail">mail:</label>
+    <input type="email" class="form-control" id="mail">
+  </div>
+  <div class="form-group">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> Acepte los términos
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-default">Entrar</button>
+  </form>
+</div> 
+
+<h2>FORMULARIO HORIZONTAL </h2>
+
+<div class="container">
+
+  <form class="form-horizontal" role="form">
+    <div class="form-group">
+      <label for="usuario" class="col-sm-3 control-label">Ponga su Nombre de usuario:</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="usuario">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="clave" class="col-sm-3 control-label">Ponga su contraseña:</label>
+      <div class="col-sm-9">
+        <input type="password" class="form-control" id="clave">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-3 col-sm-9">
+        <button type="submit" class="btn btn-default">Entrar</button>
+      </div> 
+    </div>
+  </form>
+  </div> 
+
+<h2>CONTROL Y GRUPO DE CONTROLES DESHABILITADOS </h2>
+
+<div class="container">
+
+  <form role="form">
+    <fieldset disabled> 
+      <div class="form-group">
+        <label for="usuario">Ponga su Nombre de usuario:</label>
+        <input type="text" class="form-control" id="usuario">
+      </div>
+      <div class="form-group">
+        <label for="clave">Ingrese contraseña:</label>
+        <input type="password" class="form-control" id="clave">
+      </div>
+     </fieldset>
+     <div class="checkbox">
+       <label>
+         <input type="checkbox" value="" disabled>
+          Acepte los términos y condiciones del sitio
+         </label>
+     </div>
+     <div class="form-group">
+       <button type="submit" class="btn btn-default">Entrar</button>
+     </div>
+  </form>
+  </div> 
+
+<h2>ESTILOS DE BUTTON </h2>
+
+ <div class="container">
+
+    <form role="form">
+      <div class="form-group">
+        <button type="submit" class="btn btn-default">
+btn-default : Botón estándar .</button>       
+      </div> 
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">
+btn-primary :destaca entre un conjunto de botones.</button>       
+      </div> 
+      <div class="form-group">
+        <button type="submit" class="btn btn-success">
+btn-success : Indicar una acción exitosa.</button>       
+      </div> 
+      <div class="form-group">
+        <button type="submit" class="btn btn-info">
+btn-info : Botón para información.</button>       
+      </div> 
+      <div class="form-group">
+        <button type="submit" class="btn btn-warning">
+btn-warning : Es un botón que nos informa que debemos tener 
+cuidado con la acción que tiene asociado el botón.</button>       
+      </div> 
+      <div class="form-group">
+        <button type="submit" class="btn btn-danger">
+btn-danger : La acción del botón 
+es peligrosa.</button>       
+      </div> 
+      <div class="form-group">
+        <button type="submit" class="btn btn-link">
+btn-link : Convierte al botón como un hipervínculo, haciendo
+ que disminuya su importancia.</button>       
+      </div> 
+    </form>
+  </div> 
+
+
+
+<h2>ESTILOS DE TAMAÑO DE BUTTON </h2>
+
+<div class="container">
+
+    <form role="form">
+      <div class="form-group">
+       <button type="submit" class="btn btn-primary btn-xs">
+         btn-xs : Tamaño extra pequeño</button>       
+      </div> 
+      <div class="form-group">
+       <button type="submit" class="btn btn-primary btn-sm">
+         btn-sm : Tamaño pequeño</button>       
+      </div> 
+      <div class="form-group">
+       <button type="submit" class="btn btn-primary btn-lg">
+         btn-lg : Tamaño grande</button>       
+      </div> 
+      <div class="form-group">
+       <button type="submit" class="btn btn-primary btn-block">
+         btn-block : Botón que se expande en ancho según su contenido</button>       
+      </div> 
+    </form>
+  </div> 
+
+<h2>BOTONES DESACTIVOS </h2>
+
+ <div class="container">
+
+    <form role="form">
+      <div class="form-group">
+       <button type="submit" class="btn btn-primary btn-lg">
+         Botón activo</button>       
+      </div> 
+      <div class="form-group">
+       <button type="submit" class="btn btn-primary btn-lg" disabled="disabled">
+          Desactivado</button>       
+      </div> 
+      <div class="form-group">
+       <button type="submit" class="btn btn-primary btn-lg" disabled="disabled">
+          Desactivado</button>       
+      </div> 
+      <div class="form-group">
+       <button type="submit" class="btn btn-primary btn-lg" disabled="disabled">
+          Desactivado</button>       
+      </div> 
+    </form>
+  </div> 
+
+
+<h2> Grupo de Botones, barra de herramientas y tamaños. </h2>
+
+<div class="container">
+    
+    <div class="btn-group">
+<p>Como califica su estado de animo?</p>
+      <button type="button" class="btn btn-default">1</button>
+      <button type="button" class="btn btn-default">2</button>
+      <button type="button" class="btn btn-default">3</button>
+<button type="button" class="btn btn-default">4</button>
+<button type="button" class="btn btn-default">5</button>
+<button type="button" class="btn btn-default">6</button>
+<button type="button" class="btn btn-default">7</button>
+<button type="button" class="btn btn-default">8</button>
+<button type="button" class="btn btn-default">9</button>
+<button type="button" class="btn btn-default">10</button>
+    </div>
+    <hr>
+    <div class="btn-toolbar" role="toolbar">
+      <div class="btn-group">
+<p>Que opinas del touqe de queda?</p>
+        <button type="button" class="btn btn-default">Malo</button>
+        <button type="button" class="btn btn-default">No funsiona</button>
+        <button type="button" class="btn btn-default">Maltrata al pueblo</button>
+        <button type="button" class="btn btn-default">Excelente</button>
+      </div> 
+      <div class="btn-group">
+<p>Como se llama su mama?</p>
+        <button type="button" class="btn btn-default">Mria</button>
+        <button type="button" class="btn btn-default">Teresa</button>
+        <button type="button" class="btn btn-default">Sofia</button>
+        <button type="button" class="btn btn-default">Otros...</button>
+      </div>
+     </div>
+  </div>
+
+
+</body> 
+</html>
